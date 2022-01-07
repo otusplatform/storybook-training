@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+:host::ng-deep > * {
+  color: var(--ot-color-neutral-800);
+  margin-bottom: 0;
+  margin-top: var(--ot-spacing-m);
+}
+
+:host::ng-deep > h1,
+:host::ng-deep > h2,
+:host::ng-deep > h3,
+:host::ng-deep > h4,
+:host::ng-deep > h5 {
+  color: var(--ot-color-primary-900);
+  margin-top: var(--ot-spacing-xxl);
+}
+
+:host::ng-deep > *:first-child {
+  margin-top: 0;
+}

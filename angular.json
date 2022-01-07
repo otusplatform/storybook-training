@@ -1,6 +1,32 @@
 {
   "version": 1,
   "projects": {
+    "docs-utils": {
+      "projectType": "library",
+      "root": "libs/docs-utils",
+      "sourceRoot": "libs/docs-utils/src",
+      "prefix": "storybook-training",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/docs-utils"],
+          "options": {
+            "jestConfig": "libs/docs-utils/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/docs-utils/src/**/*.ts",
+              "libs/docs-utils/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "storybook-training": {
       "projectType": "application",
       "root": "apps/storybook-training",

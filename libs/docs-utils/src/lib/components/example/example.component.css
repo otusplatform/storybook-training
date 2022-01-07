@@ -1,0 +1,21 @@
+:host {
+  margin: var(--ot-spacing-xl) 0;
+  display: block;
+}
+
+figure {
+  margin: 0 0 var(--ot-spacing-s) 0;
+  border: var(--ot-border-s) var(--ot-color-neutral-300);
+  padding: var(--ot-spacing-m);
+  border-radius: var(--ot-border-radius-m);
+  position: relative;
+}
+h3 {
+  margin: 0;
+  padding: var(--ot-spacing-xs);
+  position: absolute;
+  top: calc(-0.75em - var(--ot-spacing-xs));
+  left: 1em;
+  background: var(--ot-color-background);
+  font-size: var(--ot-font-size-s);
+}

@@ -1,0 +1,6 @@
+<h1>{{name}}</h1>
+<nav>
+  <a *ngFor="let item of nav" [href]="item.link">{{item.label}}</a>
+</nav>
+<h2>Overview</h2>
+<ng-content></ng-content>
