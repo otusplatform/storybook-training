@@ -41,7 +41,7 @@
     "@nrwl/tao": "13.4.3",
     "@nrwl/workspace": "13.4.3",
     "@storybook/addon-essentials": "~6.4.5",
-    "@storybook/angular": "^6.5.0-alpha.9",
+    "@storybook/angular": "^6.5.0-alpha.13",
     "@storybook/builder-webpack5": "~6.4.5",
     "@storybook/manager-webpack5": "~6.4.5",
     "@types/jest": "27.0.2",
