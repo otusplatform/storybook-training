@@ -1,12 +1,16 @@
-import { Story, Meta, Args } from '@storybook/angular';
+import { moduleMetadata, Story, Meta, Args } from '@storybook/angular';
 
 import { CardComponent } from './card.component';
+import { CardModule } from './card.module';
 
-import { defaultTemplate } from '@otus/docs-utils';
+import { defaultTemplate, getModuleMetadata } from '@otus/docs-utils';
+
+const meta = getModuleMetadata(CardModule);
 
 export default {
   title: 'Card',
   component: CardComponent,
+  decorators: [moduleMetadata(meta)],
 } as Meta<CardComponent>;
 
 const Template: Story<CardComponent> = (args: Args) => ({
