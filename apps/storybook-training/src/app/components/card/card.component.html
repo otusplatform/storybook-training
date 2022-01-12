@@ -1,0 +1,7 @@
+<img [src]="image" />
+<a class="heading" *ngIf="link" [href]="link">{{ heading }}</a>
+<em class="heading" *ngIf="!link">{{ heading }}</em>
+<section>
+  <ng-content></ng-content>
+</section>
+<span class="tag">{{ tag }}</span>
